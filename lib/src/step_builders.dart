@@ -128,6 +128,9 @@ class FormStepBuilder extends StatelessWidget {
     this.layout = StepLayout.stack,
     this.childAlignment = Alignment.topCenter,
     this.controlsPadding,
+    this.nextText,
+    this.backText,
+    this.finishText,
     super.key,
   });
 
@@ -143,6 +146,15 @@ class FormStepBuilder extends StatelessWidget {
   /// {@macro StepBuilder.controlsPadding}
   final EdgeInsets? controlsPadding;
 
+  /// set Title for the next button
+  final String? nextText;
+
+  /// set Title for the back button
+  final String? backText;
+
+  /// set Title for the finish button
+  final String? finishText;
+
   @override
   Widget build(BuildContext context) {
     return FormBuilder(
@@ -152,6 +164,9 @@ class FormStepBuilder extends StatelessWidget {
           layout: layout,
           shouldStepForward: validateAndSaveForm,
           controlsPadding: controlsPadding,
+          nextText: nextText,
+          backText: backText,
+          finishText: finishText,
           child: child,
         );
       },
