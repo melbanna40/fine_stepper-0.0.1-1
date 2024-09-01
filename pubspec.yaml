@@ -2,7 +2,7 @@ name: fine_stepper
 description: >
   A horizontal stepper that does the job just fine by offering easy to use apis
   to controll the stepper from any where down the widget tree
-version: 0.0.1+1
+version: 0.0.2+1
 repository: https://github.com/michaelsoliman1/fine_stepper
 issue_tracker: https://github.com/michaelsoliman1/fine_stepper/issues
 
